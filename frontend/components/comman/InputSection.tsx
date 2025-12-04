@@ -9,6 +9,8 @@ export default function InputSection() {
 
   return (
     <div className=" w-2xl flex items-center justify-center  font-inter">
+
+      
       <div className="w-full max-w-4xl">
         <div className=" backdrop-blur-3xl bg-black/30 rounded-[5px] border border-[#2E2E2E]">
           {/* Input Area */}
