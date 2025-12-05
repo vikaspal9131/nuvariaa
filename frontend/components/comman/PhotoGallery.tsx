@@ -72,12 +72,12 @@ export default function PhotoGallery() {
     },
     {
       id: 13,
-      url: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400",
+      url: "https://i.pinimg.com/1200x/08/e6/4d/08e64d6f84b345ecdb857aba8d207e38.jpg",
       span: "row-span-2",
     },
     {
       id: 14,
-      url: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400",
+      url: "https://i.pinimg.com/736x/d9/68/9c/d9689c2f7d731414932a87b642b327da.jpg",
       span: "row-span-1",
     },
     {
@@ -101,9 +101,9 @@ export default function PhotoGallery() {
   const [selectedImage, setSelectedImage] = useState<Image | null>(null);
 
   return (
-    <div className=" ">
+    <div className="bg-black/80   ">
       {/* Masonry Grid */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 auto-rows-[150px] gap-1 ">
+      <div className=" grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 auto-rows-[150px] gap-2 px-2 py-2   ">
         {images.map((image) => (
           <div
             key={image.id}
