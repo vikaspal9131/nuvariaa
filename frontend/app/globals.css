@@ -15,6 +15,7 @@
   --font-instrument: var(--font-instrument-serif);
   --font-poppins: var(--font-poppins);
   --font-inter: var(--font-inter);
+  --font-adamina: var(--font-adamina);
 
 }
 
@@ -23,4 +24,14 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+}
+
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

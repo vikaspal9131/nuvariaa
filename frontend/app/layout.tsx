@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Instrument_Serif, Poppins, Inter } from "next/font/google";
+import { Instrument_Serif, Poppins, Inter, Adamina } from "next/font/google";
+import Sidebar from "@/components/comman/SideBar";
 
 const instrumentSerif = Instrument_Serif({
   subsets: ["latin"],
@@ -19,6 +20,12 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
+const adamina = Adamina({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-adamina",
+});
+
 export const metadata: Metadata = {
   title: "Nuvaria",
   description: "An Ai image generator ",
@@ -32,7 +39,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${instrumentSerif.variable} ${poppins.variable} ${inter.variable} `}
+      className={`${instrumentSerif.variable} ${poppins.variable} ${inter.variable} ${adamina.variable}`}
     >
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -46,7 +53,9 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body>{children}</body>
+      <body>
+        <main>{children}</main>
+      </body>
     </html>
   );
 }

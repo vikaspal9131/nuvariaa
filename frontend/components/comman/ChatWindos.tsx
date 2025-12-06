@@ -6,8 +6,8 @@ import Sidebar from "./SideBar";
 
 export default function Page() {
   return (
-    <div className="flex w-full">
-      <Sidebar />
+    <div className="w-full bg-black flex">
+   
       <ChatHero />
 
     </div>

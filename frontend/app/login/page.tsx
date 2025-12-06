@@ -10,32 +10,40 @@ export default function SignUpPage() {
   };
 
   return (
-    <div className="min-h-screen flex font-inter">
-     
+    <div className="min-h-screen flex font-['Funnel_Display']">
+      <div className="hidden lg:block lg:w-1/2 h-screen relative overflow-hidden">
+        <img
+          src="https://i.pinimg.com/1200x/60/6e/3b/606e3b67b4089222e49c90df4bc066f4.jpg"
+          alt=""
+          className="w-full h-full object-cover"
+        />
+      </div>
 
       <div
-        className="w-full lg:w-full bg-black text-white flex items-center justify-center p-8"
+        className="w-full lg:w-1/2 bg-black text-white flex items-center justify-center p-8"
         style={{
           backgroundImage: `url("./images/bgimage.png")`,
         }}
       >
         <div className="w-full max-w-md">
           {/* Lightning Icon */}
-          <div className="mb-8"></div>
+          <div className="mb-8">
+         
+          </div>
 
           {/* Heading */}
           <div className="mb-8">
-            <h1 className="text-4xl  mb-2 text-gray-100 font-[DM_Sans] font-medium ">
+            <h1 className="text-4xl  mb-2 text-gray-100 font-serif">
               Welcome back!
             </h1>
-            <p className="text-gray-500 text-sm ">
-              Your work, your team, your flow all in one place.
+            <p className="text-gray-500 text-sm">
+              Your work, your team, your flow  all in one place.
             </p>
           </div>
 
           {/* Social Login Buttons */}
           <div className="space-y-3 mb-6">
-            <button className="w-full bg-white border border-gray-300  py-3 px-4 flex items-center justify-center gap-3 hover:bg-gray-50 transition-colors">
+            <button className="w-full bg-white border border-gray-300 rounded-lg py-3 px-4 flex items-center justify-center gap-3 hover:bg-gray-50 transition-colors">
               <svg className="w-5 h-5" viewBox="0 0 24 24">
                 <path
                   fill="#4285F4"
@@ -59,7 +67,7 @@ export default function SignUpPage() {
               </span>
             </button>
 
-            <button className="w-full bg-white border border-gray-300  py-3 px-4 flex items-center justify-center gap-3 hover:bg-gray-50 transition-colors">
+            <button className="w-full bg-white border border-gray-300 rounded-lg py-3 px-4 flex items-center justify-center gap-3 hover:bg-gray-50 transition-colors">
               <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
               </svg>
@@ -83,20 +91,20 @@ export default function SignUpPage() {
               placeholder="Enter your email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full bg-gray-50 border border-gray-300 px-4 py-3 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent transition-all"
+              className="w-full bg-gray-50 border border-gray-300 rounded-lg px-4 py-3 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent transition-all"
             />
           </div>
 
           {/* Sign In Button */}
           <button
             onClick={handleEmailSignIn}
-            className="w-full bg-black text-white font-medium py-3  hover:bg-gray-800 transition-colors mb-6"
+            className="w-full bg-black text-white font-medium py-3 rounded-lg hover:bg-gray-800 transition-colors mb-6"
           >
             Sign in with email
           </button>
 
           {/* Sign Up Link */}
-          <div className="text-sm">
+          <div className="text-center text-sm">
             <span className="text-gray-500">Don't have an account? </span>
             <a href="#" className="text-black font-medium hover:underline">
               Sign Up
