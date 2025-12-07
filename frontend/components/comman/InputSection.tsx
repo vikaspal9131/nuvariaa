@@ -54,7 +54,7 @@ export default function InputSection() {
           {/* Right Side */}
           <div className="flex items-center gap-3">
             <Link
-              href="/chat"
+              href="/dashboard/chat"
               className="p-2 bg-[#FD532F] hover:bg-orange-700 rounded-lg transition-colors"
             >
               <ArrowUp className="w-5 h-5 text-white" />

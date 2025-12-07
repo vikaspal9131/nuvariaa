@@ -31,7 +31,7 @@ export const ChatHero = () => {
         <div className="h-[80%] flex flex-col justify-center items-center">
           <div className="flex flex-col  justify-center items-center py-7">
             <div className="text-center">
-              <h1 className="text-8xl font-instrument text-gray-100">
+              <h1 className="text-6xl font-instrument text-gray-100">
                 Nuvaria AI-powered visuals
               </h1>
               <p className="mt-4 mb-5 text-[15px] font-inter text-gray-300">
@@ -41,12 +41,12 @@ export const ChatHero = () => {
             </div>
           </div>
 
-            <button className="bg-white text-black py-3 px-19"> Get start now  </button>
-          {/* <InputSection /> */}
+           
+          <InputSection />
         </div>
 
-        {/* <PhotoGallery /> */}
-        {/* <Footer /> */}
+        <PhotoGallery />
+        <Footer />
       </div>
     </div>
   );

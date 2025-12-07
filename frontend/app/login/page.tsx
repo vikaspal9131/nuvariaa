@@ -10,10 +10,10 @@ export default function SignUpPage() {
   };
 
   return (
-    <div className="min-h-screen flex font-['Funnel_Display']">
+    <div className="min-h-screen flex font-[DM_Sans]">
       <div className="hidden lg:block lg:w-1/2 h-screen relative overflow-hidden">
         <img
-          src="https://i.pinimg.com/1200x/60/6e/3b/606e3b67b4089222e49c90df4bc066f4.jpg"
+          src="https://i.pinimg.com/1200x/55/fe/90/55fe90c39c86713dc3ed8f551f34613c.jpg"
           alt=""
           className="w-full h-full object-cover"
         />
@@ -33,12 +33,10 @@ export default function SignUpPage() {
 
           {/* Heading */}
           <div className="mb-8">
-            <h1 className="text-4xl  mb-2 text-gray-100 font-serif">
+            <h1 className="text-4xl  text-center mb-2 text-gray-100 font-instrument">
               Welcome back!
             </h1>
-            <p className="text-gray-500 text-sm">
-              Your work, your team, your flow  all in one place.
-            </p>
+         
           </div>
 
           {/* Social Login Buttons */}
@@ -98,7 +96,7 @@ export default function SignUpPage() {
           {/* Sign In Button */}
           <button
             onClick={handleEmailSignIn}
-            className="w-full bg-black text-white font-medium py-3 rounded-lg hover:bg-gray-800 transition-colors mb-6"
+            className="w-full bg-orange-700 text-white font-medium py-3 rounded-lg hover:bg-gray-800 transition-colors mb-6"
           >
             Sign in with email
           </button>

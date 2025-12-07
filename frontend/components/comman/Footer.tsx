@@ -3,7 +3,7 @@ import { Youtube, Music2, Linkedin, Instagram } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="  md:px-30 bg-[#0A0A0A] text-gray-300 font-inter">
+    <footer className="  md: bg-[#0A0A0A] text-gray-300 font-inter">
       {/* Main Footer Content */}
       <div className=" mx-auto px-6 py-12">
         {/* Top Section */}

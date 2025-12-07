@@ -13,6 +13,7 @@ import {
   ArrowLeftToLine,
   ArrowRightToLine,
   SquarePen,
+  VideoIcon,
 } from "lucide-react";
 export default function Sidebar() {
   const [isOpen, setIsOpen] = useState(true);
@@ -29,7 +30,7 @@ export default function Sidebar() {
               <div className="flex gap-2 px-4 ">
                 <img className="w-7" src="./images/fevicon.svg" alt="" />
                 <Link
-                  href="/"
+                  href="/dashboard"
                   className="text-2xl font-medium font-instrument  text-[#D4D4D4] "
                 >
                   Nuvaria
@@ -56,7 +57,7 @@ export default function Sidebar() {
           <div className="mt-4  px-4 font-inter ">
             <ul className="flex flex-col gap-y-2 cursor-pointer text-[14px] text-[#898888] font-light ">
               <Link
-                href="/chat"
+                href="/dashboard/chat"
                 className="relative flex items-center px-2 py-2 hover:bg-[#FD532F] hover:text-white rounded-[5px]"
               >
                 <SquarePen size={18} />
@@ -70,7 +71,7 @@ export default function Sidebar() {
               </Link>
 
               <Link
-                href="/save"
+                href="/dashboard/save"
                 className="relative flex items-center px-2 py-2 hover:bg-[#FD532F] hover:text-white  rounded-[5px]"
               >
                 <Bookmark size={18} />
@@ -84,7 +85,33 @@ export default function Sidebar() {
               </Link>
 
               <Link
-                href="/history"
+                href="/dashboard/history"
+                className="relative flex items-center px-2 py-2 hover:bg-[#FD532F] hover:text-white  rounded-[5px]"
+              >
+            
+                <Image size={18} />
+                <span
+                  className={`absolute left-8 whitespace-nowrap transition-all duration-300
+        ${isOpen ? "opacity-100 translate-x-0" : "opacity-0 translate-x-[-5px]"}
+      `}
+                >
+                  AI image 
+                </span>
+              </Link>
+                 <Link
+                href="/dashboard/history"
+                className="relative flex items-center px-2 py-2 hover:bg-[#FD532F] hover:text-white  rounded-[5px]"
+              >
+                <VideoIcon size={18} />
+                <span
+                  className={`absolute left-8 whitespace-nowrap transition-all duration-300
+        ${isOpen ? "opacity-100 translate-x-0" : "opacity-0 translate-x-[-5px]"}
+      `}
+                >
+                  AI video 
+                </span>
+              </Link>   <Link
+                href="/dashboard/history"
                 className="relative flex items-center px-2 py-2 hover:bg-[#FD532F] hover:text-white  rounded-[5px]"
               >
                 <History size={18} />

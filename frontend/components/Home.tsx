@@ -15,7 +15,9 @@ export default function Home() {
      <CardSection />
      <ServicesSection />
      <VideoHeroCTA />
+     <div className="bg-[#0A0A0A] md:px-30 ">
      <Footer/>
+     </div>
     </div>
     </>
   );

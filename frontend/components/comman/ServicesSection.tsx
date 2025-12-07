@@ -82,9 +82,9 @@ const ServicesSection: React.FC = () => {
     <div className="lg:col-span-4">
       <div className="sticky top-20">
         <img
-          src="https://i.pinimg.com/736x/43/f0/11/43f011ccb941e0292c96c5f263b66b98.jpg"
+          src="./images/heroimage.jpg"
           alt=""
-          className="w-full h-[400px] max-w-[420px] object-cover"
+          className="w-full h-[400px] max-w-[420px] object-cover rounded-2xl"
         />
       </div>
     </div>
